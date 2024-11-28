@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export const ImageComponent = ({ src }: { src: string }) => {
-  console.log({ src });
 
   return (
     <Image

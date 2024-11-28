@@ -10,10 +10,8 @@ type PageFormProps = {
 
 export default async function Page({ params }: PageFormProps) {
   const pageParams = await params;
-  console.log(pageParams);
-  const slug = pageParams.slug[pageParams.slug.length - 1] || "";
+  const slug = pageParams.slug[pageParams.slug.length - 1] || "home";
   const pageContent = await pageService.getPageContent(slug);
-  console.log(pageContent);
 
   return (
     <>
@@ -22,5 +20,4 @@ export default async function Page({ params }: PageFormProps) {
       ))}
     </>
   );
-  return <div></div>;
 }

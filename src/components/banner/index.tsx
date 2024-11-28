@@ -3,15 +3,13 @@ import { TextComponent } from "../text";
 import { Child } from "@/types/page";
 
 export const BannerComponent = ({ components }: { components: Child[] }) => {
-  console.log(components);
 
   const imageComponent = components.find(
     (component) => component.component.type === "image"
   );
   const textComponent = components.find(
-    (component) => component.component.type === "text"
+    (component) => component.component.type === "richText"
   );
-  console.log({ imageComponent, textComponent });
 
   return (
     <>
@@ -28,7 +26,7 @@ export const BannerComponent = ({ components }: { components: Child[] }) => {
             <div className="container absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
               <TextComponent
                 text={textComponent.component.value}
-                className="text-5xl font-bold text-white"
+                className="text-white max-w-full w-[780px]"
               />
             </div>
           )}

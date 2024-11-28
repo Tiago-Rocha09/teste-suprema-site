@@ -2,7 +2,6 @@ import { Child } from "@/types/page";
 import { renderComponent } from "../renderComponent";
 
 export const GridComponent = ({ components }: { components: Child[] }) => {
-  console.log(components);
 
   return (
     <>

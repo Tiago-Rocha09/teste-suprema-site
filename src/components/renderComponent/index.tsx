@@ -9,13 +9,13 @@ export const renderComponent = (component: Component) => {
   switch (component.type) {
     case "text":
       return (
-        <section className="container mx-auto pb-8 relative h-full flex items-center">
+        <section className="container mx-auto pb-8 relative h-full flex items-center pl-4">
           <TextComponent text={component.value} />
         </section>
       );
     case "richText":
       return (
-        <section className="container mx-auto pb-8 relative  h-full flex items-center">
+        <section className="container mx-auto pb-8 relative  h-full flex items-center pl-4">
           <TextComponent text={component.value} />
         </section>
       );

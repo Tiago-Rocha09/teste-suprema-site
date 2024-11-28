@@ -23,7 +23,7 @@ export const BannerComponent = ({ components }: { components: Child[] }) => {
             className="brightness-50"
           />
           {textComponent && (
-            <div className="container absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+            <div className="container absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 pl-4">
               <TextComponent
                 text={textComponent.component.value}
                 className="text-white max-w-full w-[780px]"

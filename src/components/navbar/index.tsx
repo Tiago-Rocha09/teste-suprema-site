@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ pages }) => {
               </svg>
             </button>
             <ul
-              className={`dropdown-menu absolute text-gray-700 pt-1 ${
+              className={`dropdown-menu absolute text-gray-700 pt-1 z-10 ${
                 dropdownOpen ? "block" : "hidden"
               }`}
             >

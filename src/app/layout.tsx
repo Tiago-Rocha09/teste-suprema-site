@@ -32,4 +32,4 @@ export default async function RootLayout({
   );
 }
 
-export const relalidate = 5;
+export const revalidate = 5;

@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <>
-      {pageContent.section.map((section: Section) => (
+      {pageContent.section?.map((section: Section) => (
         <div key={section.id}>{renderComponent(section.component)}</div>
       ))}
     </>
